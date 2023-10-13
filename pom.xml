@@ -9,6 +9,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <modules>
     <module>ch02</module>
+    <module>ch03</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -29,7 +30,9 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
+
 
   <build>
     <finalName>frontend-dev-basics</finalName>
