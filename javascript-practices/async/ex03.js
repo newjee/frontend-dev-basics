@@ -12,14 +12,12 @@ const myAsyncFn = (param) => {
   });
 };
 
-// usage1 >> ~then ~catch
-myAsyncFn("data")
-  .then(function(result) {
-    console.log(result);
-  })
-  .catch(function(error) {
-    console.error(error);
-  });
+// usage2 >> async ~ await 함수
+const ex03 = async() => {
+  const result = await myAsyncFn("data");
+  console.log(result);
+}
 
+ex03(); 
 console.log("wait......");
  
