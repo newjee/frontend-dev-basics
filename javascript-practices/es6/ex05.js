@@ -83,3 +83,19 @@ console.log("\nex03--------");
 
 //5의 배수만...
 
+
+//ex04 : this를 어휘적으로 바인딩()
+console.log("\nex04--------");
+
+const hido={
+  name : '희도',
+  friends : ['도일', '코난', '장미'],
+  printfriends: function() {
+    //this : 희도.....
+    this.friends.forEach( (friend) => {
+      console.log(`${this.name}의 친구 ${friend}`);
+    })
+  }
+}
+
+hido.printfriends()
